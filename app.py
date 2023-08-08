@@ -2,7 +2,6 @@ from flask import Flask
 from api.models.employee import db
 from api.routes.employee_routes import employee_bp
 from decouple import config
-import atexit
 
 app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = config("DATABASE_URI")
