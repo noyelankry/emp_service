@@ -43,7 +43,7 @@ services:
 
   employee_service:
       build:
-        context: C:\git\employee_microservice\emp_service
+        context: C:\git\employee_microservice\emp_service\employee_service
         dockerfile: Dockerfile
       hostname: employee_service
       container_name: employee_service
@@ -55,7 +55,7 @@ services:
 
   notification_service:
       build:
-        context: C:\git\employee_microservice\notification_service
+        context: C:\git\employee_microservice\emp_service\notification_service
         dockerfile: Dockerfile
       hostname: notification_service
       container_name: notification_service
